@@ -1,0 +1,46 @@
+/* @path: src/index.css */
+/* CSS Poperties */
+:root {
+  /* Warm type + a brown shop palette. Light is the default. */
+  --sans: "Segoe UI", system-ui, Roboto, sans-serif;
+  --heading: "Segoe UI", system-ui, Roboto, sans-serif;
+
+  --background: #f6efe6;
+  --background-raised: #fff8f0;
+  --text-color: #5c4a3a;
+  --text-h: #3a2718;
+  --muted: #8a705a;
+  --border: #e0d0bc;
+  --accent: #a35c2a;
+  --accent-soft: #ead5c0;
+  --shadow: rgba(58, 39, 24, 0.12) 0 10px 24px -8px;
+}
+
+.dark {
+  --background-raised: #2a1f18;
+  --background: #1c1410;
+  --text-color: #d9cbb8;
+  --text-h: #f3e8d8;
+  --muted: #b39a82;
+  --border: #4a3728;
+  --accent: #e0a06a;
+  --accent-soft: #3d2a1c;
+  --shadow: rgba(0, 0, 0, 0.45) 0 10px 24px -8px;
+}
+
+/* Tailwind related */
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-background-raised: var(--background-raised);
+  --color-text-color: var(--text-color);
+  --color-text-h: var(--text-h);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-shadow: var(--shadow);
+}
