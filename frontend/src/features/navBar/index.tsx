@@ -1,10 +1,12 @@
 // @path: src/features/navBar/index.tsx
 
 // Component Imports
-import { ThemeToggle } from "../theme/ThemeToggle";
 import Logo from "./components/Logo";
 import NavItems from "./components/NavItems";
+// Style className import
 import navBarStyles from "../../core/classStyles/navBar.styles";
+import ToggleButtons from "./components/ToggleButtons";
+
 const NavBar = () => {
   return (
     <header className={navBarStyles.headerClassStyles}>
@@ -12,7 +14,7 @@ const NavBar = () => {
       <nav className={navBarStyles.navClassStyles} aria-label="Main">
         <NavItems className={navBarStyles.searchBarClassStyles} />
       </nav>
-      <ThemeToggle className={navBarStyles.themeToggleButtonClassStyles} />
+      <ToggleButtons className={navBarStyles.toggleButtons} />
     </header>
   );
 };

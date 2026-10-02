@@ -1,7 +1,8 @@
 // @path: src/core/interfaces/SearchBar.props.ts
-export interface SearchBarProps {
+export interface ISearchBarProps {
   value: string;
   setValue: (arg: string) => void;
+  onSubmit?: () => void;
   className?: {
     spanClass: string;
     inputClass: string;

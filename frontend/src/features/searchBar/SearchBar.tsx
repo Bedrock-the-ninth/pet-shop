@@ -1,13 +1,16 @@
 // @path: src/features/searchBar/SearchBar.tsx
-import type { SearchBarProps } from "../../core/interfaces/SearchBar.props";
+import type { ISearchBarProps } from "../../core/interfaces/SearchBar.props";
 import { MdSearch } from "react-icons/md";
 
-const SearchBar = ({ value, setValue, className }: SearchBarProps) => {
+const SearchBar = ({ value, setValue, onSubmit, className }: ISearchBarProps) => {
+  
   return (
     <>
-      <span className={`${className?.spanClass}`}>
+      <form onSubmit={onSubmit} className={`${className?.spanClass}`}>
         <input
           type="text"
+          id="query-field"
+          name="query"
           className={`${className?.inputClass}`}
           value={value}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -16,10 +19,10 @@ const SearchBar = ({ value, setValue, className }: SearchBarProps) => {
           placeholder="Search Products"
           style={{ outline: "none" }}
         />
-        <button className={`${className?.buttonClass}`}>
+        <button type="submit" className={`${className?.buttonClass}`}>
           <MdSearch />
         </button>
-      </span>
+      </form>
     </>
   );
 };
