@@ -1,18 +1,17 @@
 // @path: src/features/layout/Layout.tsx
 // Packages import
 import { Outlet } from "react-router-dom";
-// Modular styles import
 // Components import
 import NavBar from "../navBar";
 import Footer from "./components/Footer";
 
 export function Layout() {
   return (
-    <div className="">
+    <div className="min-h-screen flex flex-col">
       <NavBar />
-      <div className="">
+      <main className="min-w-screen">
         <Outlet />
-      </div>
+      </main>
       <Footer />
     </div>
   );

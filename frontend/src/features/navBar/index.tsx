@@ -1,22 +1,14 @@
 // @path: src/features/navBar/index.tsx
 
-// Component Imports
-import Logo from "./components/Logo";
-import NavItems from "./components/NavItems";
-// Style className import
-import navBarStyles from "../../core/classStyles/navBar.styles";
-import ToggleButtons from "./components/ToggleButtons";
+// Custom Hook import
+import useMediaQuery from "../../hooks/useMediaQuery";
+import NavbarDesktop from "./NavbarDesktop";
+import NavBarMobile from "./NavBarMobile";
 
 const NavBar = () => {
-  return (
-    <header className={navBarStyles.headerClassStyles}>
-      <Logo />
-      <nav className={navBarStyles.navClassStyles} aria-label="Main">
-        <NavItems className={navBarStyles.searchBarClassStyles} />
-      </nav>
-      <ToggleButtons className={navBarStyles.toggleButtons} />
-    </header>
-  );
+  const isDesktop = useMediaQuery();
+
+  return <header>{isDesktop ? <NavbarDesktop /> : <NavBarMobile />}</header>;
 };
 
 export default NavBar;

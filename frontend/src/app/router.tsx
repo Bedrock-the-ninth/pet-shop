@@ -1,4 +1,5 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+// @path: src/app/router.tsx
+import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../features/layout/Layout";
 import { Home } from "../pages/home/Home";
 
@@ -7,8 +8,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      { index: true, element: <Navigate to="/home" replace /> },
-      { path: "/home", element: <Home /> },
+      { index: true, element: <Home /> },
     ],
   },
 ]);

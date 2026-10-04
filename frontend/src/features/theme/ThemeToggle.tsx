@@ -27,15 +27,17 @@ export function ThemeToggle({ className }: { className: propsType }) {
     }
   }, [mode]);
 
-  function clickHandler() {
-    setMode((prev) => (prev == "light" ? "dark" : "light"));
-  }
-
   return (
-    <span onClick={clickHandler} className={className?.themeToggleSpanClass}>
-      <button className={className?.themeToggleButtonClass}>
-        {mode === "light" ? <FaMoon /> : <FaSun />}
-      </button>
-    </span>
+    // <span onClick={clickHandler} className={className?.themeToggleSpanClass}>
+    <button
+      className={`${className?.themeToggleButtonClass} ${className?.themeToggleSpanClass}`}
+      onClick={() => {
+        setMode((prev) => (prev === "light" ? "dark" : "light"));
+      }}
+      aria-label={`Switched to ${mode}-mode`}
+    >
+      {mode === "light" ? <FaMoon /> : <FaSun />}
+    </button>
+    // </span>
   );
 }
