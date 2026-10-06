@@ -8,7 +8,7 @@ import NavBarMobile from "./NavBarMobile";
 const NavBar = () => {
   const isDesktop = useMediaQuery();
 
-  return <header>{isDesktop ? <NavbarDesktop /> : <NavBarMobile />}</header>;
+  return <header className="border-b border-b-border">{isDesktop ? <NavbarDesktop /> : <NavBarMobile />}</header>;
 };
 
 export default NavBar;
