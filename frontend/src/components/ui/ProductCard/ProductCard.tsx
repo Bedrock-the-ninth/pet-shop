@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../../app/store";
 import {
   addToCart,
-  cart,
   isInCart,
   noInCart,
   removeAll,
@@ -17,10 +16,9 @@ export const ProductCard = ({ product }: { product: IProducts }) => {
   const useAppState = useSelector.withTypes<RootState>();
 
   const dispatch = useAppDispatch();
-  const state = useAppState(cart);
 
-  const isItemInCart = isInCart(state, product.id);
-  const quantityInCart = noInCart(state, product.id);
+  const isItemInCart = useAppState((state) => isInCart(state, product.id));
+  const quantityInCart = useAppState((state) => noInCart(state, product.id));
 
   return (
     <div id={`${product.id}`}>

@@ -38,7 +38,7 @@ const cartSlicer = createSlice({
         });
       }
 
-      state.invoice = Math.ceil(state.invoice + action.payload.price);
+      state.invoice += Math.round(action.payload.price * 100);
     },
     removeOne: (state, action) => {
       const itemIndex = state.cartContent.findIndex(
@@ -53,7 +53,7 @@ const cartSlicer = createSlice({
         state.cartContent.splice(itemIndex, 1);
       }
 
-      state.invoice = Math.ceil(state.invoice - action.payload.price);
+      state.invoice -= Math.round(action.payload.price * 100);
     },
     removeAll: (state, action) => {
       const itemIndex = state.cartContent.findIndex(
@@ -63,10 +63,12 @@ const cartSlicer = createSlice({
       if (itemIndex === -1) return;
 
       const reductionPrice =
-        (state.cartContent[itemIndex].product?.price ?? 0) *
+        Math.round((state.cartContent[itemIndex].product?.price ?? 0) * 100) *
         state.cartContent[itemIndex].lot;
+
       state.cartContent.splice(itemIndex, 1);
-      state.invoice = Math.ceil(state.invoice - reductionPrice);
+
+      state.invoice -= Math.round(reductionPrice);
     },
     removeCart: (state) => {
       state.cartContent = [];
@@ -77,7 +79,7 @@ const cartSlicer = createSlice({
 
 export const { addToCart, removeOne, removeAll, removeCart } =
   cartSlicer.actions;
-export const cart = (state: RootState) => state;
+export const cart = (state: RootState) => state.cart;
 export default cartSlicer.reducer;
 
 // Util functions
