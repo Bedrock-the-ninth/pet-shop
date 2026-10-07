@@ -13,11 +13,13 @@ interface IProductInCart {
 export type CartState = {
   cartContent: IProductInCart[];
   invoice: number;
+  totalItemsInCart: number;
 };
 
 const initialState: CartState = {
   cartContent: [],
   invoice: 0,
+  totalItemsInCart: 0,
 };
 
 const cartSlicer = createSlice({
@@ -30,7 +32,9 @@ const cartSlicer = createSlice({
       );
 
       if (item) {
-        item.lot += 1;
+        if (item.product?.inStock && item.lot < item.product.inStock){
+          item.lot += 1;
+        }
       } else {
         state.cartContent.push({
           product: action.payload,
@@ -39,6 +43,7 @@ const cartSlicer = createSlice({
       }
 
       state.invoice += Math.round(action.payload.price * 100);
+      state.totalItemsInCart += 1;
     },
     removeOne: (state, action) => {
       const itemIndex = state.cartContent.findIndex(
@@ -54,6 +59,7 @@ const cartSlicer = createSlice({
       }
 
       state.invoice -= Math.round(action.payload.price * 100);
+      state.totalItemsInCart -= 1;
     },
     removeAll: (state, action) => {
       const itemIndex = state.cartContent.findIndex(
@@ -62,13 +68,15 @@ const cartSlicer = createSlice({
 
       if (itemIndex === -1) return;
 
+      const noItemsToRemove = state.cartContent[itemIndex].lot;
       const reductionPrice =
         Math.round((state.cartContent[itemIndex].product?.price ?? 0) * 100) *
-        state.cartContent[itemIndex].lot;
+        noItemsToRemove;
 
       state.cartContent.splice(itemIndex, 1);
 
       state.invoice -= Math.round(reductionPrice);
+      state.totalItemsInCart -= noItemsToRemove;
     },
     removeCart: (state) => {
       state.cartContent = [];
