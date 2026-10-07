@@ -2,12 +2,11 @@
 
 // Component import
 import { ProductCard } from "../../components/ui/ProductCard/ProductCard";
-
-// Fake Data import
-import { products } from "../../core/data/products";
+import useFilteredProducts from "./useFilteredProducts";
 
 const Index = () => {
-  return (
+    const products = useFilteredProducts()
+    return (
     <section className="bg-background min-h-screen mt-0">
       <div className="mx-5 py-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {products.map((product) => (
