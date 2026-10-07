@@ -1,7 +1,9 @@
 // @path: src/components/ui/ProductCard/ProductCard.tsx
-import type { IProducts } from "../../../core/interfaces/Products";
+// React Hook import
+import { useId } from "react";
+
+// React Redux Toolkit import
 import { useDispatch, useSelector } from "react-redux";
-import type { AppDispatch, RootState } from "../../../app/store";
 import {
   addToCart,
   isInCart,
@@ -9,8 +11,15 @@ import {
   removeAll,
   removeOne,
 } from "../Cart/cartSlicer";
+
+// Type import
+import type { AppDispatch, RootState } from "../../../app/store";
+import type { IProducts } from "../../../core/interfaces/Products";
+
+// Icon import
 import { FaTrashCan } from "react-icons/fa6";
-import { useId } from "react";
+
+// Class Style import
 import ProductCardClassStyles from "./productCard.styles";
 
 export const ProductCard = ({ product }: { product: IProducts }) => {

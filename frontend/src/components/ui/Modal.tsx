@@ -13,7 +13,7 @@ const Modal = ({ isValid, onClose, className, children }: IModalPropsType) => {
     return (
       <div
         onClick={onClose}
-        className={`fixed inset-0 flex bg-background/90 backdrop-blur-sm ${className?.mainDivClass}`}
+        className={`fixed z-50 inset-0 flex bg-background/90 backdrop-blur-sm ${className?.mainDivClass}`}
       >
         <button
           className={`top-3 right-3 ${className?.buttonClass}`}
