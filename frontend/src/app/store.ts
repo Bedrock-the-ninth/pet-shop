@@ -1,8 +1,11 @@
 // @path: src/app/store.ts
+// React Redux Toolkit import
 import { configureStore } from "@reduxjs/toolkit";
+
+// Slice import
 import cartReducer from "../components/ui/Cart/cartSlicer";
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
     cart: cartReducer,
   },

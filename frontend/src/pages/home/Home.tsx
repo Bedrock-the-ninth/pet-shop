@@ -1,9 +1,12 @@
+// @path: src/pages/home/Home.tsx
 import Landing from "../../components/ui/Landing";
 
-export function Home() {
+const Home = () => {
   return (
     <section>
       <Landing />
     </section>
-  )
-}
+  );
+};
+
+export default Home;
