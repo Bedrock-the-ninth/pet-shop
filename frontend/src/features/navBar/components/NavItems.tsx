@@ -9,7 +9,7 @@ const NavItems = (props : any) => {
       <NavLink to="/" end>
         Home
       </NavLink>
-      <NavLink to="/shop">Shop</NavLink>
+      <NavLink to="/products">Shop</NavLink>
       <NavLink to="/posts">Blog</NavLink>
       <NavLink to="/about">About</NavLink>
       <NavLink to="/contact-us">Contact</NavLink>

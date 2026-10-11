@@ -1,4 +1,6 @@
+// @path: src/components/ui/Landing.tsx
 import heroImg from "../../assets/images/heroImg.png";
+import { NavLink } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -23,7 +25,7 @@ const Landing = () => {
               and more. Because they deserve the best.
             </p>
             <button className="mt-8 rounded-full bg-accent px-7 py-3 font-semibold text-background transition duration-200 hover:-translate-y-0.5 hover:bg-[#4A2918] hover:shadow-lg">
-              Shop Now ⇨
+              <NavLink to="/products">Shop Now ⇨</NavLink>
             </button>
           </div>
           <div id="hero-img" className="relative flex justify-center">
