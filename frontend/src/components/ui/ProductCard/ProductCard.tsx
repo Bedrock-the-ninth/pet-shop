@@ -22,7 +22,7 @@ import { FaTrashCan } from "react-icons/fa6";
 // Class Style import
 import ProductCardClassStyles from "./productCard.styles";
 
-export const ProductCard = ({ product }: { product: IProducts }) => {
+const ProductCard = ({ product }: { product: IProducts }) => {
   const useAppDispatch = useDispatch.withTypes<AppDispatch>();
   const useAppState = useSelector.withTypes<RootState>();
 
@@ -131,3 +131,5 @@ export const ProductCard = ({ product }: { product: IProducts }) => {
     </div>
   );
 };
+
+export default ProductCard;
