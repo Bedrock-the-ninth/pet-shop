@@ -3,14 +3,39 @@
 // Icon imports
 import { PiDog, PiCat, PiBird, PiFish } from "react-icons/pi";
 import { GiDogBowl, GiBelt } from "react-icons/gi";
+import { ICategoryButtonPropTypes } from "../interfaces/CategoryButton.props";
 
-const buttonList = [
-  { kindOrCat: "kind", title: "Dog", Icon: PiDog },
-  { kindOrCat: "kind", title: "Cat", Icon: PiCat },
-  { kindOrCat: "kind", title: "Bird", Icon: PiBird },
-  { kindOrCat: "kind", title: "Fish", Icon: PiFish },
-  { kindOrCat: "category", title: "Food", Icon: GiDogBowl },
-  { kindOrCat: "category", title: "Accessory", Icon: GiBelt },
+const buttonList: ICategoryButtonPropTypes[] = [
+  {
+    to: ["kind", "dog"],
+    label: "Dog",
+    Icon: PiDog,
+  },
+  {
+    to: ["kind", "cat"],
+    label: "Cat",
+    Icon: PiCat,
+  },
+  {
+    to: ["kind", "bird"],
+    label: "Bird",
+    Icon: PiBird,
+  },
+  {
+    to: ["kind", "fish"],
+    label: "Fish",
+    Icon: PiFish,
+  },
+  {
+    to: ["category", "food"],
+    label: "Food",
+    Icon: GiDogBowl,
+  },
+  {
+    to: ["category", "accessory"],
+    label: "Accessory",
+    Icon: GiBelt,
+  },
 ];
 
 export default buttonList;

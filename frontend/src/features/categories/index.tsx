@@ -1,7 +1,7 @@
-// @path: src/components/ui/CategoryButtons.tsx
+// @path: src/features/categories/index.tsx
 
 // Component import
-import Buttons from "../../components/ui/CatButtons/CatButton";
+import CategoryButton from "./components/CategoryButton";
 
 // Static data import
 import buttonList from "../../core/data/categoryButtonList";
@@ -13,10 +13,10 @@ const Categories = () => {
   return (
     <div className={mainDivClass}>
       {buttonList.map((button) => (
-        <Buttons
-          key={button.title}
-          kindOrCat={button.kindOrCat}
-          title={button.title}
+        <CategoryButton
+          key={button.label}
+          to={button.to}
+          label={button.label}
           Icon={button.Icon}
         />
       ))}

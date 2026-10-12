@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <section>
       <Landing />
-      <Categories />
+      <section className="bg-background">
+        <Categories />
+      </section>
     </section>
   );
 };
