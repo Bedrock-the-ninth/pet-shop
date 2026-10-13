@@ -12,6 +12,9 @@ import {
   removeOne,
 } from "../Cart/cartSlicer";
 
+// Component import
+import Rating from "../Rating";
+
 // Type import
 import type { AppDispatch, RootState } from "../../../app/store";
 import type { IProducts } from "../../../core/interfaces/Products";
@@ -60,33 +63,35 @@ const ProductCard = ({ product }: { product: IProducts }) => {
           {product.name}
         </h2>
 
-        <p className={ProductCardClassStyles.productInfo.priceTagClass}>
-          ${product.price.toFixed(2)}
-        </p>
+        <div className="flex flex-col">
+          <p className={ProductCardClassStyles.productInfo.priceTagClass}>
+            ${product.price.toFixed(2)}
+          </p>
 
-        <p className={ProductCardClassStyles.productInfo.stockAlertClass}>
-          {product.inStock < 10
-            ? `Only ${product.inStock} left in stock!`
-            : `${product.inStock} in stock`}
-        </p>
+          <p className={ProductCardClassStyles.productInfo.stockAlertClass}>
+            {product.inStock < 10
+              ? `Only ${product.inStock} left in stock!`
+              : `${product.inStock} in stock`}
+          </p>
+        </div>
 
+        {product.review && (
+          <div className="flex flex-col items-center">
+            <p className="text-muted">Reviewed by {product.review.votes}</p>
+            <Rating score={product.review.score} />
+          </div>
+        )}
         {/* Cart controls */}
-        <div
-          className={
-            ProductCardClassStyles.productInfo.cartControls.mainDivClass
-          }
-        >
+        <div className={ProductCardClassStyles.cartControls.mainDivClass}>
           {isItemInCart ? (
             <div
               className={
-                ProductCardClassStyles.productInfo.cartControls
-                  .mainControlDivClass
+                ProductCardClassStyles.cartControls.mainControlDivClass
               }
             >
               <button
                 className={
-                  ProductCardClassStyles.productInfo.cartControls
-                    .reduceButtonClass
+                  ProductCardClassStyles.cartControls.reduceButtonClass
                 }
                 onClick={() => dispatch(removeOne(product))}
               >
@@ -95,8 +100,7 @@ const ProductCard = ({ product }: { product: IProducts }) => {
 
               <span
                 className={
-                  ProductCardClassStyles.productInfo.cartControls
-                    .quantityInCartClass
+                  ProductCardClassStyles.cartControls.quantityInCartClass
                 }
               >
                 {quantityInCart}
@@ -104,8 +108,7 @@ const ProductCard = ({ product }: { product: IProducts }) => {
 
               <button
                 className={
-                  ProductCardClassStyles.productInfo.cartControls
-                    .increaseButtonClass
+                  ProductCardClassStyles.cartControls.increaseButtonClass
                 }
                 onClick={() => dispatch(addToCart(product))}
                 disabled={
@@ -118,8 +121,7 @@ const ProductCard = ({ product }: { product: IProducts }) => {
           ) : (
             <button
               className={
-                ProductCardClassStyles.productInfo.cartControls
-                  .addToCartButtonClass
+                ProductCardClassStyles.cartControls.addToCartButtonClass
               }
               onClick={() => dispatch(addToCart(product))}
             >
