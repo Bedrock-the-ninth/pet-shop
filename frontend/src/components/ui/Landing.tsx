@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
-    <section className="relative flex flex-col overflow-hidden border-b border-b-border bg-background lg:min-h-136 lg:flex-row lg:items-center">
-      <div className="relative flex flex-col items-center-safe lg:items-start z-10 mx-auto w-full max-w-6xl px-6 pt-12 pb-10 sm:px-10 sm:pt-16 lg:py-24">
+    <section className="relative flex flex-col overflow-hidden bg-background border-b border-b-border lg:min-h-136 lg:flex-row lg:items-center">
+      <div className="relative flex flex-col items-center-safe lg:items-start z-10 mx-auto w-full max-w-6xl px-6 pt-12 pb-10 sm:px-10 sm:pt-10 lg:py-24">
         <div className="max-w-lg">
           <p className="text-sm font-medium text-accent">
             Healthy pets, happy lives
@@ -33,7 +33,7 @@ const Landing = () => {
           className="size-full object-cover object-center"
         />
 
-        <div className="absolute inset-x-0 top-0 h-24 bg-linear-to-b from-background to-background/0 lg:inset-0 lg:h-auto lg:bg-linear-to-r lg:to-60%" />
+        <div className="absolute inset-x-0 top-0 h-24 bg-linear-to-b from-background from-10% to-background/0 lg:inset-0 lg:h-auto lg:bg-linear-to-r lg:to-60%" />
       </div>
     </section>
   );
