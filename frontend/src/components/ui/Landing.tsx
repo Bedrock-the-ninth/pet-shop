@@ -20,8 +20,8 @@ const Landing = () => {
       </div>
 
       {/* Text */}
-      <div className="relative mx-auto -mt-10 w-full max-w-6xl px-6 pb-14 sm:-mt-14 sm:px-10 lg:mt-0 lg:py-28">
-        <div className="max-w-xl">
+      <div className="relative mx-auto -mt-10 w-full max-w-6xl px-6 pb-14 sm:-mt-14 sm:px-10 lg:mt-0 lg:py-28 self-center">
+        <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase sm:text-sm">
             Healthy pets, happy lives
           </p>
@@ -30,7 +30,7 @@ const Landing = () => {
             The best care for your furry friends
           </h1>
 
-          <p className="mt-5 max-w-md text-base leading-7 text-pretty text-text-color/75 sm:text-lg sm:leading-8">
+          <p className="mt-5 text-base leading-7 text-pretty text-text-color/75 sm:text-lg sm:leading-8 lg:max-w-md">
             Premium pet food, supplies and accessories for dogs, cats, birds and
             more. Because they deserve the best.
           </p>
