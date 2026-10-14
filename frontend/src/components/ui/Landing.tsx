@@ -1,5 +1,5 @@
 // @path: src/components/ui/Landing.tsx
-import heroImg from "../../assets/images/cat-and-dog.jpg";
+import heroImg from "../../assets/images/cat-and-dog.webp";
 import { Link } from "react-router-dom";
 
 const Landing = () => {
