@@ -1,5 +1,5 @@
 // src/components/ui/PromoBanner/PromoBanner.tsx
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import promoPetBeds from "../../assets/images/pet-bed.webp";
 
@@ -27,7 +27,7 @@ const LeafOutline = ({ className }: { className?: string }) => (
 
 const PromoBanner = () => {
   return (
-    <section className="relative isolate overflow-hidden rounded-2xl border border-border">
+    <section className="relative isolate overflow-hidden border border-border">
       <img
         src={promoPetBeds}
         alt=""
@@ -54,12 +54,12 @@ const PromoBanner = () => {
           <p className="mt-3 text-sm text-text-color/80">
             Comfort for them. Peace of mind for you.
           </p>
-          <NavLink
-            to="/shop/pet-beds"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-sm font-semibold text-text-color transition-transform hover:scale-105"
+          <Link
+            to={{pathname: "/products", search: "?q=pet-beds"}}
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-105"
           >
             Shop Now <FiArrowRight />
-          </NavLink>
+          </Link>
         </div>
       </div>
     </section>

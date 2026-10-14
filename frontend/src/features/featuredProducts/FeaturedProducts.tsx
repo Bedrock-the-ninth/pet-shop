@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const FeaturedProducts = () => {
   return (
-    <div className="py-5 mx-auto max-w-lg md:max-w-3xl lg:max-w-5xl ">
+    <div className="py-5 mx-auto max-w-lg md:max-w-3xl lg:max-w-6xl ">
       <div className="flex flex-row items-center justify-between mb-6 mx-5 overflow-hidden">
         <span className="flex flex-col justify-baseline">
           <p className="text-sm font-medium text-accent">Best Sellers</p>

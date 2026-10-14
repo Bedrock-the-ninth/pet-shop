@@ -3,7 +3,7 @@ const ProductCardClassStyles = {
   mainDivClass:
     "relative flex flex-col overflow-hidden rounded-2xl border-2 border-border bg-background-raised shadow-shadow transition-transform hover:-translate-y-1",
   trashCanButtonClass:
-    "absolute right-3 top-3 z-10 rounded-full p-2 text-accent transition-colors hover:bg-accent hover:text-white",
+    "absolute right-3 top-3 z-10 rounded-full p-2 text-accent text-center border border-accent transition-colors hover:bg-accent hover:text-white",
   imageDivClass: "flex h-55 items-center justify-center p-4",
   imageTagClass: "h-full w-full object-contain",
   productInfo: {

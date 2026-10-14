@@ -4,7 +4,7 @@ import landingImg from "../../assets/images/landing-image.webp";
 
 const Landing = () => {
   return (
-    <section className="relative isolate overflow-hidden border-b border-border/10 bg-background text-text-color lg:flex lg:min-h-136 lg:items-center xl:min-h-152">
+    <section className="relative isolate overflow-hidden border-b border-border/80 bg-background text-text-color lg:flex lg:min-h-136 lg:items-center xl:min-h-152">
       <div className="relative aspect-4/3 sm:aspect-video lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-3/5">
         <img
           src={landingImg}
@@ -37,7 +37,7 @@ const Landing = () => {
 
           <Link
             to="/products"
-            className="mt-8 inline-flex items-center rounded-full bg-accent-soft px-7 py-3 font-semibold text-text-color shadow-lg shadow-black/30 transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+            className="mt-8 inline-flex items-center rounded-full bg-accent px-7 py-3 font-semibold text-white shadow-lg shadow-black/30 transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent motion-reduce:transition-none motion-reduce:hover:translate-y-0"
           >
             Shop now
           </Link>

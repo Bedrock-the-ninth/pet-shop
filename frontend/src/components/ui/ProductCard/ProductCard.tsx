@@ -77,7 +77,7 @@ const ProductCard = ({ product }: { product: IProducts }) => {
 
         {product.review && (
           <div className="flex flex-col items-center">
-            <p className="text-muted">Reviewed by {product.review.votes} people</p>
+            <p className="text-muted text-center">Reviewed by {product.review.votes} people</p>
             <Rating score={product.review.score} />
           </div>
         )}
