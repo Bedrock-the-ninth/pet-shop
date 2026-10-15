@@ -3,6 +3,7 @@ export interface IToggleButtonsProps {
   className: {
     mainDivClass?: string;
     userAndCartButtonsClasses?: string;
+    searchIconClass?: string;
     themeToggleClasses?: {
       themeToggleSpanClass: string;
       themeToggleButtonClass: string;

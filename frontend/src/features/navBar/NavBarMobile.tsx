@@ -28,7 +28,10 @@ const NavBarMobile = () => {
           <RiMenu2Line />
         </button>
         <Logo />
-        <ToggleButtons className={navBarStylesMobile.toggleButtons} />
+        <ToggleButtons
+          isMobile={true}
+          className={navBarStylesMobile.toggleButtons}
+        />
       </div>
       <Modal
         className={navBarStylesMobile.modalMenu}
@@ -38,6 +41,7 @@ const NavBarMobile = () => {
         <Logo />
         <NavItems className={navBarStylesMobile.modalMenu.navItems} />
         <hr className={navBarStylesMobile.modalMenu.hrTag} />
+        {/* TODO: Modal buttons close the menu down and don't show a sign of functionality. Fix that asap. */}
         <ToggleButtons className={navBarStylesMobile.toggleButtons} />
       </Modal>
     </>

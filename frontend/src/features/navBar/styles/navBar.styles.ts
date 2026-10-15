@@ -30,7 +30,9 @@ export const navBarStylesMobile = {
   toggleButtons: {
     mainDivClass: "flex items-center mx-2 px-2 gap-5 min-h-15",
     userAndCartButtonsClasses:
-      "text-text-color hover:text-accent scale-120 hover:scale-150 transition-all",
+      "text-text-color hover:text-accent scale-120 hover:scale-150 transition-all cursor-pointer",
+    searchIconClass:
+      "text-text-color hover:text-accent scale-120 hover:scale-150 transition-all cursor-pointer",
     themeToggleClasses: {
       themeToggleSpanClass:
         "flex bg-text-color text-background-raised hover:bg-accent text-center justify-center rounded-full items-center min-w-10 hover:scale-110 transition-all",
@@ -43,6 +45,5 @@ export const navBarStylesMobile = {
     childrenClass: "flex flex-col items-center",
     navItems: "flex flex-col justify-center items-center gap-5 mt-5",
     hrTag: "my-5 min-w-40 text-text-color text-center",
-
   },
 };
