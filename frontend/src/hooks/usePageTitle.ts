@@ -19,6 +19,7 @@ export function usePageTitle() {
   useEffect(() => {
     const pageTitle = PAGE_TITLES[pathname] ?? "Page Not Found";
 
-    document.title = `${pageTitle} | PetStore`;
+    // TODO: When locales are figured out, the name should become dynamic.
+    document.title = `${pageTitle} | PawMart`;
   }, [pathname]);
 }

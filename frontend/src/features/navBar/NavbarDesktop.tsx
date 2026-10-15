@@ -13,7 +13,7 @@ const NavbarDesktop = () => {
     <>
       {/* Desktop Navbar */}
       <div className={navBarStyles.headerClassStyles}>
-        <Logo />
+        <Logo businessName="PawMart" />
         <NavItems className={navBarStyles.navClassStyles} />
         {/* TODO 1: Implement the onSubmit function so we can send a request for
          querying products. */}

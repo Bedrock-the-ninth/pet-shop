@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import type { ILogoProps } from "../../../core/interfaces/Logo.props";
 import { MdOutlinePets } from "react-icons/md";
 
-const Logo = ({ business_name, LogoIcon }: ILogoProps) => {
+const Logo = ({ businessName, LogoIcon }: ILogoProps) => {
   return (
     <Link
       to="/"
@@ -11,13 +11,11 @@ const Logo = ({ business_name, LogoIcon }: ILogoProps) => {
       className="flex gap-2 items-center  justify-center min-h-18 min-w-10 p-2 text-text-h font-bold text-2xl"
     >
       {LogoIcon ? (
-        <LogoIcon className="text-accent min-h-15" />
+        <LogoIcon className="text-accent size-10" />
       ) : (
-        <MdOutlinePets className="text-accent" />
+        <MdOutlinePets className="text-accent size-8" />
       )}
-      <h1 className="text-xl">
-      {business_name || "PetShop"}
-      </h1>
+      <h1 className="text-2xl">{businessName || "PetShop"}</h1>
     </Link>
   );
 };

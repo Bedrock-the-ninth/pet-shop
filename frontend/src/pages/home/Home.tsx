@@ -4,18 +4,20 @@ import Landing from "../../components/ui/Landing";
 import Categories from "../../features/categories";
 import FeaturedProducts from "../../features/featuredProducts/FeaturedProducts";
 import { usePageTitle } from "../../hooks/usePageTitle";
+import Benefits from "../../components/ui/Benefits";
 
 const Home = () => {
   usePageTitle();
 
   return (
-    <section>
+    <section className="bg-background">
       <Landing />
-      <section className="bg-background">
+      <section>
         <Categories />
         <FeaturedProducts />
-        <PromoBanner />
       </section>
+      <PromoBanner />
+      <Benefits />
     </section>
   );
 };

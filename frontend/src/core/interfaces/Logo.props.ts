@@ -2,6 +2,6 @@
 import type { IconType } from "react-icons";
 
 export interface ILogoProps {
-    business_name? : string,
+    businessName? : string,
     LogoIcon? : IconType,
 }

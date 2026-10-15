@@ -1,7 +1,7 @@
 // @path: src/core/classStyles/navBar.styles.ts
 export const navBarStyles = {
   headerClassStyles:
-    "hidden lg:flex items-center justify-between bg-background text-text-h",
+    "hidden lg:flex items-center justify-between bg-background text-text-h px-5",
   navClassStyles:
     "flex w-1/2 items-center justify-center gap-5 font-bold text-md",
   searchBarClassStyles: {
