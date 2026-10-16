@@ -5,6 +5,8 @@ import Categories from "../../features/categories";
 import FeaturedProducts from "../../features/featuredProducts/FeaturedProducts";
 import { usePageTitle } from "../../hooks/usePageTitle";
 import Benefits from "../../components/ui/Benefits";
+import BlogCarousel from "../../features/blogCarousel/index";
+import Newsletter from "../../features/newsletter";
 
 const Home = () => {
   usePageTitle();
@@ -18,6 +20,13 @@ const Home = () => {
       </section>
       <PromoBanner />
       <Benefits />
+      <hr className="text-border/90" />
+      <BlogCarousel />
+      <Newsletter
+        onSubscribe={async (email: string) => {
+          console.log("Newsletter signup: ", email);
+        }}
+      />
     </section>
   );
 };

@@ -1,0 +1,246 @@
+[
+  {
+    "id": "post-001",
+    "slug": "choosing-the-perfect-cat-bed",
+    "title": "How to Choose the Perfect Cat Bed",
+    "excerpt": "From sleepy curlers to full-length stretchers, find a cozy resting spot that suits your cat's habits and your home.",
+    "author": { "name": "PetStore Care Team" },
+    "category": "Cat Care",
+    "tags": ["cats", "comfort", "buying-guide"],
+    "publishedAt": "2026-10-10",
+    "updatedAt": null,
+    "image": {
+      "src": "/images/blog/cat-bed.jpg",
+      "alt": "A cat relaxing comfortably at home",
+      "sourceUrl": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=1200&q=85",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Cats can spend much of the day resting, so a comfortable place to sleep is more than a cute accessory. The best bed is one your cat actually wants to use."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Start with your cat's sleeping style"
+      },
+      {
+        "type": "paragraph",
+        "text": "Notice whether your cat curls into a ball, stretches out, or seeks covered spaces. A round bolster bed may suit a cat that curls up, while a flat cushion gives a sprawler more room."
+      },
+      { "type": "heading", "level": 2, "text": "Choose practical materials" },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Look for removable, machine-washable covers.",
+          "Choose a size that allows your cat to change positions comfortably.",
+          "Consider breathable fabrics in warm rooms and plush fabrics in cooler spaces."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Place the bed somewhere calm and familiar. If your cat ignores it, try moving it near a favorite resting spot instead of forcing a change."
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "post-002",
+    "slug": "daily-exercise-ideas-for-dogs",
+    "title": "Simple Ways to Keep Your Dog Active Every Day",
+    "excerpt": "Build a realistic activity routine with walks, sniffing games, short training sessions, and play that fits your dog's needs.",
+    "author": { "name": "PetStore Care Team" },
+    "category": "Dog Care",
+    "tags": ["dogs", "exercise", "enrichment"],
+    "publishedAt": "2026-10-08",
+    "updatedAt": null,
+    "image": {
+      "src": "/images/blog/dog-exercise.jpg",
+      "alt": "A happy golden retriever outdoors",
+      "sourceUrl": "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1200&q=85",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Regular activity supports a dog's physical health and gives them useful ways to explore the world. The right routine depends on age, breed, health, and individual temperament."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Make walks about more than distance"
+      },
+      {
+        "type": "paragraph",
+        "text": "Let your dog safely sniff interesting spots during walks. Sniffing provides mental stimulation, so a slower exploratory walk can be rewarding even when it covers less ground."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Mix physical and mental activities"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Play a short game of fetch where it is safe.",
+          "Hide a few pieces of your dog's usual food for a supervised scent game.",
+          "Practice simple cues such as sit, touch, or recall.",
+          "Offer suitable puzzle feeders and rotate toys to keep them interesting."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Increase activity gradually and provide water and rest. Ask a veterinarian for guidance if your dog has a health condition, is very young, or is older and less mobile."
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "post-003",
+    "slug": "gentle-cat-grooming-at-home",
+    "title": "A Gentle Guide to Grooming Your Cat at Home",
+    "excerpt": "Make brushing a calmer experience with short sessions, the right tools, and plenty of positive reinforcement.",
+    "author": { "name": "PetStore Care Team" },
+    "category": "Grooming",
+    "tags": ["cats", "grooming", "coat-care"],
+    "publishedAt": "2026-10-05",
+    "updatedAt": null,
+    "image": {
+      "src": "/images/blog/cat-grooming.jpg",
+      "alt": "A close-up portrait of a domestic cat",
+      "sourceUrl": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=85",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Regular, gentle grooming can help reduce loose fur and gives you a chance to notice changes in your cat's coat or skin. Keep the experience brief and stop before your cat becomes distressed."
+      },
+      { "type": "heading", "level": 2, "text": "Choose a suitable brush" },
+      {
+        "type": "paragraph",
+        "text": "A soft brush may work well for many short-haired cats, while longer coats often need more frequent combing with a tool designed for their fur. Follow the direction of hair growth and never pull at a mat."
+      },
+      { "type": "heading", "level": 2, "text": "Keep sessions positive" },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Let your cat sniff the brush before you begin.",
+          "Start with a few gentle strokes in a comfortable area.",
+          "Pair calm handling with praise or a small treat.",
+          "Avoid sensitive areas if your cat signals discomfort."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Severe mats, irritated skin, or sudden changes in grooming behavior may need professional help. Contact a veterinarian if you notice pain, wounds, or unusual hair loss."
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "post-004",
+    "slug": "helping-your-dog-socialize-safely",
+    "title": "Helping Your Dog Socialize at Their Own Pace",
+    "excerpt": "Thoughtful introductions and rewarding calm behavior can help dogs feel more comfortable around new people, places, and animals.",
+    "author": { "name": "PetStore Care Team" },
+    "category": "Training",
+    "tags": ["dogs", "training", "socialization"],
+    "publishedAt": "2026-10-02",
+    "updatedAt": null,
+    "image": {
+      "src": "/images/blog/dog-socialization.jpg",
+      "alt": "Two dogs spending time together outdoors",
+      "sourceUrl": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=85",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Good socialization is not about making a dog greet everyone. It is about helping them experience everyday situations safely and learn that they can observe the world without being overwhelmed."
+      },
+      { "type": "heading", "level": 2, "text": "Give your dog room to choose" },
+      {
+        "type": "paragraph",
+        "text": "Begin at a distance where your dog can notice a person or another dog while remaining relaxed. Reward calm attention and move farther away if your dog stiffens, hides, barks repeatedly, or tries to escape."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Keep introductions short and controlled"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Choose quiet locations with enough space.",
+          "Ask other people to avoid rushing up or reaching over your dog.",
+          "Introduce compatible dogs in a neutral area with loose leads and supervision.",
+          "End the session while things are still going well."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Never force an interaction. If fear or reactivity is persistent, seek help from a qualified, reward-based trainer or veterinary behavior professional."
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "post-005",
+    "slug": "everyday-wellness-checks-for-pets",
+    "title": "Small Daily Habits for Your Pet's Well-Being",
+    "excerpt": "A simple routine for water, enrichment, coat checks, and noticing changes before they become harder to manage.",
+    "author": { "name": "PetStore Care Team" },
+    "category": "Pet Wellness",
+    "tags": ["wellness", "daily-routine", "pet-care"],
+    "publishedAt": "2026-09-28",
+    "updatedAt": null,
+    "image": {
+      "src": "/images/blog/pet-wellness.jpg",
+      "alt": "A friendly dog photographed in a bright, relaxed setting",
+      "sourceUrl": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=1200&q=85",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Caring for a pet is made up of small, repeatable habits. A consistent routine helps you understand what is normal for your animal and notice changes sooner."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Build a simple daily checklist"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Provide fresh water and appropriate meals.",
+          "Make time for species- and age-appropriate play or enrichment.",
+          "Check that resting areas are clean and comfortable.",
+          "Notice changes in appetite, thirst, energy, movement, or toileting."
+        ]
+      },
+      { "type": "heading", "level": 2, "text": "Don't skip preventive care" },
+      {
+        "type": "paragraph",
+        "text": "Keep vaccinations, parasite prevention, dental care, and routine veterinary visits on a schedule recommended for your pet. Needs differ by species, age, lifestyle, and medical history."
+      },
+      {
+        "type": "paragraph",
+        "text": "A checklist is not a substitute for veterinary advice. If your pet has trouble breathing, collapses, cannot urinate, or shows another severe or sudden symptom, seek urgent veterinary care."
+      }
+    ],
+    "status": "published"
+  }
+]
