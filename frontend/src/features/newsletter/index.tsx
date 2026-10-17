@@ -1,3 +1,4 @@
+// @path: src/features/newsletter/index.tsx
 
 import { type SubmitEvent, useState } from "react";
 
